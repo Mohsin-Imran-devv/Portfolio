@@ -107,23 +107,23 @@ const Contact = () => {
     {
       icon: FiMail,
       label: "Email",
-      value: "mohsinimran@example.com",
-      href: "mailto:mohsinimran@example.com",
+      value: "11mohsinimran11@gmail.com",
+      href: "mailto:11mohsinimran11@gmail.com",
       color: "text-red-500",
       bg: "bg-red-50 dark:bg-red-900/20",
     },
     {
       icon: FiPhone,
       label: "Phone",
-      value: "+92 300 1234567",
-      href: "tel:+923001234567",
+      value: "+92 327 5062108",
+      href: "tel:+923275062108",
       color: "text-green-500",
       bg: "bg-green-50 dark:bg-green-900/20",
     },
     {
       icon: FiMapPin,
       label: "Location",
-      value: "Islamabad, Pakistan",
+      value: "Koral, Islamabad",
       href: "#",
       color: "text-blue-500",
       bg: "bg-blue-50 dark:bg-blue-900/20",
@@ -266,7 +266,7 @@ const Contact = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    placeholder="John Doe"
+                    placeholder="Mohsin Imran"
                     className={`w-full px-4 py-3 rounded-xl bg-white dark:bg-dark-100 border ${
                       errors.name
                         ? "border-red-500"
@@ -292,7 +292,7 @@ const Contact = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    placeholder="john@example.com"
+                    placeholder="mohsin@example.com"
                     className={`w-full px-4 py-3 rounded-xl bg-white dark:bg-dark-100 border ${
                       errors.email
                         ? "border-red-500"

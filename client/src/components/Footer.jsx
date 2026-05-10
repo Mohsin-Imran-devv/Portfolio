@@ -20,7 +20,7 @@ const Footer = () => {
  const socialLinks = [
   { 
     icon: FiGithub, 
-    href: 'https://github.com/Mohsin-Imran-dev',  
+    href: 'https://github.com/Mohsin-Imran-devv',  
     label: 'GitHub' 
   },
   { 
@@ -132,7 +132,7 @@ const Footer = () => {
               <ul className="space-y-3">
                 <li className="text-gray-600 dark:text-gray-400 flex items-start gap-2">
                   <FiMail className="mt-1 flex-shrink-0 text-blue-600 dark:text-blue-400" size={16} />
-                  <span>mohsinimran@example.com</span>
+                  <span>11mohsinimran11@gmail.com</span>
                 </li>
                 <li className="text-gray-600 dark:text-gray-400 flex items-start gap-2">
                   <FiCode className="mt-1 flex-shrink-0 text-purple-600 dark:text-purple-400" size={16} />
