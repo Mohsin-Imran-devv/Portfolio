@@ -157,8 +157,8 @@ const Projects = () => {
       category: "React",
       tech: ["React.js", "Exchange Rate API", "JavaScript", "CSS3"],
       techIcons: [SiReact, SiJavascript, SiCss3],
-      github: "https://github.com/Mohsin-Imran-dev/currency-converter",
-      live: "#",
+      github: "https://github.com/Mohsin-Imran-devv/CurrencyConverter.git",
+      live: "https://currency-converter-tau-lyart.vercel.app/",
       features: [
         "Live Exchange Rates",
         "Multi-Currency Support",
@@ -283,8 +283,8 @@ const Projects = () => {
       category: "React",
       tech: ["React.js", "JavaScript", "CSS3"],
       techIcons: [SiReact, SiJavascript, SiCss3],
-      github: "https://github.com/Mohsin-Imran-dev/stopwatch",
-      live: "#",
+      github: "https://github.com/Mohsin-Imran-devv/StopWatch.git",
+      live: "https://stop-watch-psi-fawn.vercel.app/",
       features: [
         "Start/Stop Timer",
         "Reset Functionality",
