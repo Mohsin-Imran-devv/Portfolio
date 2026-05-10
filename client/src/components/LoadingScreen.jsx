@@ -35,7 +35,7 @@ const LoadingScreen = () => {
           transition={{ delay: 0.6 }}
           className="mt-2 text-gray-600 dark:text-gray-400"
         >
-          Loading amazing things...
+          Loading Mohsin's Portfolio...
         </motion.p>
       </div>
     </motion.div>
