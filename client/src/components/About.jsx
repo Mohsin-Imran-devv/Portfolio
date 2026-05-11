@@ -1,10 +1,16 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { 
-  FiAward, FiCode, FiTrendingUp, FiZap,
-  FiStar, FiTarget, FiBook, FiCoffee 
-} from 'react-icons/fi';
+import React from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import {
+  FiAward,
+  FiCode,
+  FiTrendingUp,
+  FiZap,
+  FiStar,
+  FiTarget,
+  FiBook,
+  FiCoffee,
+} from "react-icons/fi";
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -13,49 +19,52 @@ const About = () => {
   });
 
   const stats = [
-    { 
-      icon: FiCode, 
-      value: '10+', 
-      label: 'Projects Completed',
-      gradient: 'from-blue-500 to-blue-600',
-      shadow: 'shadow-blue-500/25',
-      bg: 'bg-blue-50 dark:bg-blue-900/20'
+    {
+      icon: FiCode,
+      value: "10+",
+      label: "Projects Completed",
+      gradient: "from-blue-500 to-blue-600",
+      shadow: "shadow-blue-500/25",
+      bg: "bg-blue-50 dark:bg-blue-900/20",
     },
-    { 
-      icon: FiAward, 
-      value: '3.98', 
-      label: 'CGPA',
-      gradient: 'from-purple-500 to-purple-600',
-      shadow: 'shadow-purple-500/25',
-      bg: 'bg-purple-50 dark:bg-purple-900/20'
+    {
+      icon: FiAward,
+      value: "3.98",
+      label: "CGPA",
+      gradient: "from-purple-500 to-purple-600",
+      shadow: "shadow-purple-500/25",
+      bg: "bg-purple-50 dark:bg-purple-900/20",
     },
-    { 
-      icon: FiZap, 
-      value: 'Full Stack', 
-      label: 'Developer',
-      gradient: 'from-pink-500 to-pink-600',
-      shadow: 'shadow-pink-500/25',
-      bg: 'bg-pink-50 dark:bg-pink-900/20'
+    {
+      icon: FiZap,
+      value: "Full Stack",
+      label: "Developer",
+      gradient: "from-pink-500 to-pink-600",
+      shadow: "shadow-pink-500/25",
+      bg: "bg-pink-50 dark:bg-pink-900/20",
     },
-    { 
-      icon: FiTrendingUp, 
-      value: 'Quick', 
-      label: 'Learner',
-      gradient: 'from-green-500 to-green-600',
-      shadow: 'shadow-green-500/25',
-      bg: 'bg-green-50 dark:bg-green-900/20'
+    {
+      icon: FiTrendingUp,
+      value: "Quick",
+      label: "Learner",
+      gradient: "from-green-500 to-green-600",
+      shadow: "shadow-green-500/25",
+      bg: "bg-green-50 dark:bg-green-900/20",
     },
   ];
 
   const highlights = [
-    { icon: FiStar, text: 'BSCS Student at National Skills University' },
-    { icon: FiTarget, text: 'Strong foundation in DSA & OOP concepts' },
-    { icon: FiCoffee, text: 'Passionate about building scalable web apps' },
-    { icon: FiBook, text: 'Continuous learner & problem solver' },
+    { icon: FiStar, text: "BSCS Student at National Skills University" },
+    { icon: FiTarget, text: "Strong foundation in DSA & OOP concepts" },
+    { icon: FiCoffee, text: "Passionate about building scalable web apps" },
+    { icon: FiBook, text: "Continuous learner & problem solver" },
   ];
 
   return (
-    <section id="about" className="relative py-20 lg:py-32 bg-white dark:bg-dark-300">
+    <section
+      id="about"
+      className="relative py-20 lg:py-32 bg-white dark:bg-dark-300"
+    >
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-gradient-to-b from-blue-50/50 to-transparent dark:from-blue-900/10 rounded-full blur-3xl" />
@@ -102,32 +111,37 @@ const About = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-[2rem] rotate-6 opacity-10" />
               <div className="absolute inset-0 bg-gradient-to-tr from-blue-500 to-pink-500 rounded-[2rem] -rotate-3 opacity-20" />
-              
+
               {/* Main card */}
-              <div className="absolute inset-3 glass-card rounded-[1.7rem] overflow-hidden flex items-center justify-center p-8">
-                <div className="text-center">
-                  <motion.div
-                    animate={{ 
-                      scale: [1, 1.05, 1],
-                      rotate: [0, 5, -5, 0]
-                    }}
-                    transition={{ duration: 4, repeat: Infinity }}
-                    className="text-7xl lg:text-8xl mb-6"
-                  >
-                    👨‍💻
-                  </motion.div>
-                  <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-2">
-                    Mohsin Imran
-                  </h3>
-                  <div className="flex items-center justify-center gap-2 text-blue-600 dark:text-blue-400 font-semibold">
-                    <FiCode />
-                    <span>Full Stack Developer</span>
-                  </div>
-                  <div className="mt-4 inline-block px-4 py-1.5 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 text-sm font-semibold">
-                    CGPA: 3.98
-                  </div>
-                </div>
-              </div>
+              <div className="absolute inset-3 glass-card rounded-[1.7rem] overflow-hidden flex items-center justify-center p-6 sm:p-8">
+  <div className="text-center">
+    <motion.div
+      animate={{
+        scale: [1, 1.03, 1],
+      }}
+      transition={{ duration: 3, repeat: Infinity }}
+      className="mb-4 sm:mb-6 relative mt-2 sm:mt-0"
+    >
+      <div className="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 mx-auto rounded-full overflow-hidden border-4 border-blue-500 shadow-2xl ring-4 ring-blue-100 dark:ring-blue-900">
+        <img
+          src="/PIC1.jpeg"
+          alt="Mohsin Imran"
+          className="w-full h-full object-cover"
+        />
+      </div>
+    </motion.div>
+    <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-1 sm:mb-2">
+      Mohsin Imran
+    </h3>
+    <div className="flex items-center justify-center gap-2 text-blue-600 dark:text-blue-400 font-semibold text-sm sm:text-base">
+      <FiCode />
+      <span>Full Stack Developer</span>
+    </div>
+    <div className="mt-3 sm:mt-4 mb-2 sm:mb-0 inline-block px-3 sm:px-4 py-1 sm:py-1.5 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 text-xs sm:text-sm font-semibold">
+      CGPA: 3.98
+    </div>
+  </div>
+</div>
             </div>
           </motion.div>
 
@@ -139,21 +153,33 @@ const About = () => {
             className="space-y-6"
           >
             <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white leading-tight">
-              A Passionate{' '}
-              <span className="gradient-text">Full Stack Developer</span>
-              {' '}from Islamabad, Pakistan 📍
+              A Passionate{" "}
+              <span className="gradient-text">Full Stack Developer</span> from
+              Islamabad, Pakistan 📍
             </h3>
-            
+
             <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
-              I'm a dedicated BSCS student at <span className="font-semibold text-gray-900 dark:text-white">National Skills University</span> with an outstanding 
-              CGPA of <span className="font-bold text-blue-600 dark:text-blue-400">3.98</span>. I specialize in building modern, scalable web applications 
-              using cutting-edge technologies. My strong academic foundation combined with 
-              practical project experience makes me ready to tackle real-world challenges.
+              I'm a dedicated BSCS student at{" "}
+              <span className="font-semibold text-gray-900 dark:text-white">
+                National Skills University
+              </span>{" "}
+              with an outstanding CGPA of{" "}
+              <span className="font-bold text-blue-600 dark:text-blue-400">
+                3.98
+              </span>
+              . I specialize in building modern, scalable web applications using
+              cutting-edge technologies. My strong academic foundation combined
+              with practical project experience makes me ready to tackle
+              real-world challenges.
             </p>
 
             <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
-              Currently seeking <span className="font-semibold text-blue-600 dark:text-blue-400">internship opportunities</span> to apply my skills, 
-              gain industry experience, and contribute to meaningful projects.
+              Currently seeking{" "}
+              <span className="font-semibold text-blue-600 dark:text-blue-400">
+                internship opportunities
+              </span>{" "}
+              to apply my skills, gain industry experience, and contribute to
+              meaningful projects.
             </p>
 
             {/* Highlights Grid */}
@@ -192,11 +218,17 @@ const About = () => {
               whileHover={{ scale: 1.05, y: -5 }}
               className="relative group"
             >
-              <div className={`relative p-6 lg:p-8 rounded-2xl ${stat.bg} border border-gray-100 dark:border-gray-700 shadow-lg hover:shadow-xl transition-all duration-300`}>
-                <div className={`inline-flex p-3 rounded-xl bg-gradient-to-r ${stat.gradient} text-white ${stat.shadow} mb-4`}>
+              <div
+                className={`relative p-6 lg:p-8 rounded-2xl ${stat.bg} border border-gray-100 dark:border-gray-700 shadow-lg hover:shadow-xl transition-all duration-300`}
+              >
+                <div
+                  className={`inline-flex p-3 rounded-xl bg-gradient-to-r ${stat.gradient} text-white ${stat.shadow} mb-4`}
+                >
                   <stat.icon size={22} />
                 </div>
-                <div className={`text-3xl lg:text-4xl font-black text-gray-900 dark:text-white mb-1 bg-gradient-to-r ${stat.gradient} bg-clip-text text-transparent`}>
+                <div
+                  className={`text-3xl lg:text-4xl font-black text-gray-900 dark:text-white mb-1 bg-gradient-to-r ${stat.gradient} bg-clip-text text-transparent`}
+                >
                   {stat.value}
                 </div>
                 <div className="text-gray-600 dark:text-gray-400 font-medium text-sm">

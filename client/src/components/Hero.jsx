@@ -292,7 +292,7 @@ const Hero = () => {
           >
             <motion.div
               whileHover={{ scale: 1.2 }}
-              className="p-2 rounded-full bg-gray-100 dark:bg-dark-100"
+              className="p-2 rounded-full -ml-[4.2vw] sm:-ml-[1.4vw] bg-gray-100 dark:bg-dark-100"
             >
               <FiArrowDown className="text-primary-500 dark:text-primary-400" size={20} />
             </motion.div>
